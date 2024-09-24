@@ -32,5 +32,5 @@ plt.figure(figsize=(30,30))
 for i, DecisionTree in enumerate(model.estimators_):
     plt.subplot(1, 5, i+1)
     tree.plot_tree(DecisionTree,feature_names=feature_names,class_names=target_names,filled=True)
-plt.show()
+plt.savefig('forest.png')
 
