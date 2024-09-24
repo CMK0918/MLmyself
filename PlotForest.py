@@ -28,7 +28,7 @@ print("交叉驗證分數",score.mean())
 feature_names=data.feature_names
 target_names=data.target_names
 
-plt.figure(figsize=(30,30))
+plt.figure(figsize=(128,64))
 for i, DecisionTree in enumerate(model.estimators_):
     plt.subplot(1, 5, i+1)
     tree.plot_tree(DecisionTree,feature_names=feature_names,class_names=target_names,filled=True)
